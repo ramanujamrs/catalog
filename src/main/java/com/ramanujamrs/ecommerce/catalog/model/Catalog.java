@@ -4,17 +4,27 @@
  */
 package com.ramanujamrs.ecommerce.catalog.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.sql.Timestamp;
 
-
+@Entity
 public class Catalog {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String catalogName;
     private String catalogDescription;
     private String active;
     private Timestamp createdAt;
     private Timestamp modifiedAt;
+
+    public Catalog() {
+        super();
+    }
 
     public Catalog(Long id, String catalogName, String catalogDescription, String active, Timestamp createdAt, Timestamp modifiedAt) {
         this.id = id;
