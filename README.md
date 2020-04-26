@@ -7,6 +7,10 @@
 
 ### Architecture & Design
  Coming soon
+ 
+### Concepts
+- **Externalized Config**
+- **Distributed Tracing**
 
 ### Technology Stack
 
